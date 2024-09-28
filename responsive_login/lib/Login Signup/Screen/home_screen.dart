@@ -26,7 +26,7 @@ class HomeScreen extends StatelessWidget {
                 CircleAvatar(
                   radius: 30,
                   backgroundImage: NetworkImage(user?.photoURL ?? ''),
-                  backgroundColor: Colors.grey.shade200,
+                  backgroundColor: Color.fromARGB(255, 175, 167, 167),
                 ),
                 const SizedBox(width: 20), // Space between image and text
                 // User details in a Column

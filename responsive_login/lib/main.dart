@@ -7,7 +7,14 @@ import 'package:responsive_login/Login%20Signup/Screen/login.dart';
 void main() async {
   // Initialize Firebase
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    options: const FirebaseOptions(
+      apiKey: 'AIzaSyAO48oWFXqa7I36SxO8as9Bl4rG9WFL7m4', 
+      appId: '1:707621383027:web:c5f31909dd1579b5a1b306', 
+      messagingSenderId: '707621383027', 
+      projectId: 'flutter-project-12038',
+    )
+  );
   runApp(const MyApp());
 }
 
